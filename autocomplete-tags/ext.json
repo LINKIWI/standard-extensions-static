@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.autocomplete-tags",
+    "name": "Autocomplete Tags",
+    "content_type": "SN|Component",
+    "area": "note-tags",
+    "version": "1.0.0",
+    "url": "/extensions/autocomplete-tags/index.html"
+}

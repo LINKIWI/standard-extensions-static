@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.simple-markdown-editor",
+    "name": "Simple Markdown Editor",
+    "content_type": "SN|Component",
+    "area": "editor-editor",
+    "version": "1.0.0",
+    "url": "/extensions/simple-markdown-editor/dist/index.html"
+}

@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.futura-theme",
+    "name": "Futura Theme",
+    "content_type": "SN|Component",
+    "area": "themes",
+    "version": "1.0.0",
+    "url": "/extensions/futura-theme/dist/dist.css"
+}

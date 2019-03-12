@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.code-editor",
+    "name": "Code Editor",
+    "content_type": "SN|Component",
+    "area": "editor-editor",
+    "version": "1.0.0",
+    "url": "/extensions/code-editor/index.html"
+}

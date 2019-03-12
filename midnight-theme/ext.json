@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.midnight-theme",
+    "name": "Midnight Theme",
+    "content_type": "SN|Component",
+    "area": "themes",
+    "version": "1.0.0",
+    "url": "/extensions/midnight-theme/dist/dist.css"
+}

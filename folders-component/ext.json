@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.folders-component",
+    "name": "Folders Component",
+    "content_type": "SN|Component",
+    "area": "tags-list",
+    "version": "1.0.0",
+    "url": "/extensions/folders-component/index.html"
+}

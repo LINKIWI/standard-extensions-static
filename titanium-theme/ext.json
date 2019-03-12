@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.titanium-theme",
+    "name": "Titanium Theme",
+    "content_type": "SN|Component",
+    "area": "themes",
+    "version": "1.0.0",
+    "url": "/extensions/titanium-theme/dist/dist.css"
+}
