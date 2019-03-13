@@ -1,0 +1,8 @@
+{
+    "identifier": "org.standardnotes.dynamic-theme",
+    "name": "Dynamic Theme",
+    "content_type": "SN|Component",
+    "area": "themes",
+    "version": "1.0.0",
+    "url": "https://standard-extensions.static.kevinlin.info/dynamic-theme/dist/dist.css"
+}
