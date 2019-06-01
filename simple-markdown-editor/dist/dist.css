@@ -1,45 +1,89 @@
+/*
+
+Atom One Light by Daniel Gamage
+Original One Light Syntax theme from https://github.com/atom/one-light-syntax
+
+base:    #fafafa
+mono-1:  #383a42
+mono-2:  #686b77
+mono-3:  #a0a1a7
+hue-1:   #0184bb
+hue-2:   #4078f2
+hue-3:   #a626a4
+hue-4:   #50a14f
+hue-5:   #e45649
+hue-5-2: #c91243
+hue-6:   #986801
+hue-6-2: #c18401
+
+*/
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: .5em;
+  padding: 0.5em;
   color: #383a42;
   background: #fafafa; }
 
-.hljs-comment, .hljs-quote {
+.hljs-comment,
+.hljs-quote {
   color: #a0a1a7;
   font-style: italic; }
 
-.hljs-doctag, .hljs-formula, .hljs-keyword {
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
   color: #a626a4; }
 
-.hljs-deletion, .hljs-name, .hljs-section, .hljs-selector-tag, .hljs-subst {
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
   color: #e45649; }
 
 .hljs-literal {
   color: #0184bb; }
 
-.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
   color: #50a14f; }
 
-.hljs-built_in, .hljs-class .hljs-title {
+.hljs-built_in,
+.hljs-class .hljs-title {
   color: #c18401; }
 
-.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
   color: #986801; }
 
-.hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-symbol, .hljs-title {
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
   color: #4078f2; }
 
 .hljs-emphasis {
   font-style: italic; }
 
 .hljs-strong {
-  font-weight: 700; }
+  font-weight: bold; }
 
 .hljs-link {
   text-decoration: underline; }
+
 body, html {
-  font-family: sans-serif;
+  font-family: var(--sn-stylekit-sans-serif-font);
   height: 100%;
   width: 100%;
   margin: 0;
@@ -60,6 +104,8 @@ body, html {
   font-size: var(--sn-stylekit-font-size-editor);
   background-color: var(--sn-stylekit-editor-background-color);
   color: var(--sn-stylekit-editor-foreground-color); }
+  #simple-markdown .sk-label {
+    width: 48px; }
 
 #editor-container {
   flex-grow: 1;
@@ -72,6 +118,7 @@ body, html {
   color: var(--sn-stylekit-editor-foreground-color);
   font-size: var(--sn-stylekit-font-size-editor);
   -webkit-overflow-scrolling: touch;
+  font-family: var(--sn-stylekit-sans-serif-font);
   flex-grow: 0;
   border: 0px;
   outline: 0;
@@ -80,7 +127,7 @@ body, html {
   #editor.edit {
     width: 100% !important; }
   #editor.split {
-    width: calc(50% - 20px); }
+    width: calc(50% - 4px); }
   #editor.preview {
     width: 0 !important;
     padding: 0;
@@ -94,9 +141,11 @@ body, html {
     display: none; }
 
 #preview {
-  padding: 10px;
+  padding: 12px;
   padding-top: 0;
-  padding-left: 16px;
+  font-family: var(--sn-stylekit-sans-serif-font);
+  margin-top: -4px;
+  -webkit-overflow-scrolling: touch;
   background-color: var(--sn-stylekit-background-color);
   color: var(--sn-stylekit-foreground-color);
   overflow: auto;
@@ -107,7 +156,7 @@ body, html {
     padding: 0;
     padding-left: 0; }
   #preview.split {
-    width: calc(50% - 20px); }
+    width: calc(50% - 4px); }
   #preview.preview {
     width: 100% !important; }
   #preview img {
@@ -133,6 +182,8 @@ body, html {
     color: var(--sn-stylekit-info-color);
     border: 1px solid var(--sn-stylekit-contrast-border-color);
     border-radius: 3px; }
+  #preview code {
+    font-family: var(--sn-stylekit-monospace-font); }
   #preview table {
     display: block;
     margin-bottom: 12px;
@@ -180,7 +231,7 @@ body, html {
         font-weight: bold; }
 
 :root {
-  --sn-stylekit-base-font-size: 14px;
+  --sn-stylekit-base-font-size: 13px;
   --sn-stylekit-font-size-p: 1.0rem;
   --sn-stylekit-font-size-editor: 1.21rem;
   --sn-stylekit-font-size-h6: 0.8rem;
@@ -691,7 +742,9 @@ body, html {
 .sn-component .sk-segmented-buttons .sk-button, .sn-component .sk-segmented-buttons .sk-box {
   border-radius: 0;
   white-space: nowrap;
-  margin: 0; }
+  margin: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
 
 .sn-component .sk-segmented-buttons .sk-button:not(:last-child), .sn-component .sk-segmented-buttons .sk-box:not(:last-child) {
   border-right: none;
